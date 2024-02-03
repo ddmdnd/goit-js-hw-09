@@ -11,9 +11,9 @@ const images = [
     },
     {
       preview:
-       "/img/lamp.png",
+       "img/lamp.png",
       original:
-      "/img/lamp4.png",
+      "img/lamp4.png",
       description: "A lamp",
     },
     {
