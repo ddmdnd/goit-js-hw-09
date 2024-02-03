@@ -6,16 +6,16 @@
 const images = [
     {
       preview:
-        "../img/teamWork.png",
+        "./img/teamWork.png",
       original:
-      "../img/teamWork4.png",
+      "./img/teamWork4.png",
       description: "Team Work",
     },
     {
       preview:
-        "../img/lamp.png",
+        "./img/lamp.png",
       original:
-      "../img/lamp4.png",
+      "./img/lamp4.png",
       description: "A lamp",
     },
     {
