@@ -8,7 +8,7 @@ const images = [
       preview:
         "../img/teamWork2.png",
       original:
-      "../img/teamWork2.png",
+      "../img/teamWork4.png",
       description: "Team Work",
     },
     {
