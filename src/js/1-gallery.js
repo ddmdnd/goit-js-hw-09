@@ -1,66 +1,71 @@
+  // Описаний в документації
+  import SimpleLightbox from "simplelightbox";
+  // Додатковий імпорт стилів
+  import "simplelightbox/dist/simple-lightbox.min.css";
+    
 const images = [
     {
       preview:
-        "https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg",
+        "../img/teamWork.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg",
-      description: "Hokkaido Flower",
+      "../img/teamWork.jpeg",
+      description: "Team Work",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg",
+        "../img/lamp.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg",
-      description: "Container Haulage Freight",
+      "../img/lamp.jpeg",
+      description: "A lamp",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg",
+        "../img/phone.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg",
-      description: "Aerial Beach View",
+      "../img/phone.jpeg",
+      description: "A phone",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg",
+        "../img/meetingRoom.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg",
-      description: "Flower Blooms",
+        "../img/meetingRoom.jpeg",
+      description: "A meeting room",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg",
+        "../img/relaxZone.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg",
-      description: "Alpine Mountains",
+        "../img/relaxZone.jpeg",
+      description: "Relax Zone",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg",
+        "../img/office.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg",
-      description: "Mountain Lake Sailing",
+      "../img/office.jpeg",
+      description: "Office",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg",
+        "../img/desk.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
-      description: "Alpine Spring Meadows",
+      "../img/desk.jpeg",
+      description: "A desk",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg",
+        "../img/girlAndLaptop.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
-      description: "Nature Landscape",
+      "../img/girlAndLaptop.jpeg",
+      description: "A girl and a laptop",
     },
     {
       preview:
-        "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg",
+        "../img/meeting.jpeg",
       original:
-        "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
-      description: "Lighthouse Coast Sea",
+      "../img/meeting.jpeg",
+      description: "Meeting",
     },
   ];
   // preventDefault();
@@ -68,45 +73,13 @@ const images = [
   const imageGallery = images.reduce((html, image) => {
   return html + `<li class="gallery-item">
   <a class="gallery-link" href="${image.original}">
-    <img
-      class="gallery-image"
-      src="${image.preview}"
-      data-source="${image.original}"
-      alt="${image.description}"
-    />
-  </a>
-  </li>`;
+  <img class="gallery-image" src="${image.preview}" alt="${image.description}" />
+  </a></li>`;
   },"");
   gallery.innerHTML = imageGallery;
-  let instance;
-  gallery.addEventListener("click", event => {
-    event.preventDefault();
-    const targetItem = event.target.dataset.source;
-  if(targetItem){
-    const modalImage = `<img src="${targetItem}" width="800" height="600">
-    `;
-    const closeWithEsc = (evt) =>{
-      if(evt.key === "Escape"){
-        instance.close()
-      }
-    }
-    instance = basicLightbox.create(
-      modalImage , {
-        onShow: (instance) => {
-          window.addEventListener ("keydown", closeWithEsc);
-          instance.closeWithEsc = closeWithEsc;
-        },
-        onClose: (instance) => {
-          window.removeEventListener ("keydown", instance.closeWithEsc);
-        }
-      }
-      )
-      instance.show()
-    }
-    
+  const lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+
   
-  })
-  
-  
+
   
   
