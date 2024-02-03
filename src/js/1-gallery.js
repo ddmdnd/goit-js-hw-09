@@ -13,58 +13,58 @@ const images = [
     },
     {
       preview:
-        "../img/lamp.jpeg",
+        "../img/lamp.png",
       original:
-      "../img/lamp.jpeg",
+      "../img/lamp4.png",
       description: "A lamp",
     },
     {
       preview:
-        "../img/phone.jpeg",
+        "../img/phone.png",
       original:
-      "../img/phone.jpeg",
+      "../img/phone4.png",
       description: "A phone",
     },
     {
       preview:
-        "../img/meetingRoom.jpeg",
+        "../img/meetingRoom.png",
       original:
-        "../img/meetingRoom.jpeg",
+        "../img/meetingRoom4.png",
       description: "A meeting room",
     },
     {
       preview:
-        "../img/relaxZone.jpeg",
+        "../img/relaxZone.png",
       original:
-        "../img/relaxZone.jpeg",
+        "../img/relaxZone4.png",
       description: "Relax Zone",
     },
     {
       preview:
-        "../img/office.jpeg",
+        "../img/office.png",
       original:
-      "../img/office.jpeg",
+      "../img/office4.png",
       description: "Office",
     },
     {
       preview:
-        "../img/desk.jpeg",
+        "../img/desk.png",
       original:
-      "../img/desk.jpeg",
+      "../img/desk4.png",
       description: "A desk",
     },
     {
       preview:
-        "../img/girlAndLaptop.jpeg",
+        "../img/girlAndLaptom.png",
       original:
-      "../img/girlAndLaptop.jpeg",
+      "../img/girlAndLaptom4.png",
       description: "A girl and a laptop",
     },
     {
       preview:
-        "../img/meeting.jpeg",
+        "../img/meeting.png",
       original:
-      "../img/meeting.jpeg",
+      "../img/meeting4.png",
       description: "Meeting",
     },
   ];
