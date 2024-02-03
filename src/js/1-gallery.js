@@ -6,7 +6,7 @@
 const images = [
     {
       preview:
-        "../img/teamWork2.png",
+        "../img/teamWork.png",
       original:
       "../img/teamWork4.png",
       description: "Team Work",
