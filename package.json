@@ -9,6 +9,7 @@
     "postgit": "git push ",
     "dev": "vite",
     "build": "vite build --base=/goit-js-hw-09/",
+    "build1": "vite build --emptyOutDir",
     "preview": "vite preview"
   },
   "devDependencies": {
