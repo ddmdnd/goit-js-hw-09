@@ -4,65 +4,65 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 const images = [
     {
       preview:
-        "img/teamWork.png",
+      "/img/teamWork.png",
       original:
-      "img/teamWork4.png",
+      "/img/teamWork4.png",
       description: "Team Work",
     },
     {
       preview:
-        "../img/lamp.png",
+       "/img/lamp.png",
       original:
-      "../img/lamp4.png",
+      "/img/lamp4.png",
       description: "A lamp",
     },
     {
       preview:
-        "../img/phone.png",
+      "/img/phone.png",
       original:
-      "../img/phone4.png",
+      "/img/phone4.png",
       description: "A phone",
     },
     {
       preview:
-        "../img/meetingRoom.png",
+      "/img/meetingRoom.png",
       original:
-        "../img/meetingRoom4.png",
+      "/img/meetingRoom4.png",
       description: "A meeting room",
     },
     {
       preview:
-        "../img/relaxZone.png",
+      "/img/relaxZone.png",
       original:
-        "../img/relaxZone4.png",
+      "/img/relaxZone4.png",
       description: "Relax Zone",
     },
     {
       preview:
-        "../img/office.png",
+      "/img/office.png",
       original:
-      "../img/office4.png",
+      "/img/office4.png",
       description: "Office",
     },
     {
       preview:
-        "../img/desk.png",
+        "/img/desk.png",
       original:
-      "../img/desk4.png",
+      "/img/desk4.png",
       description: "A desk",
     },
     {
       preview:
-        "../img/girlAndLaptom.png",
+      "/img/girlAndLaptom.png",
       original:
-      "../img/girlAndLaptom4.png",
+      "/img/girlAndLaptom4.png",
       description: "A girl and a laptop",
     },
     {
       preview:
-        "../img/meeting.png",
+        "/img/meeting.png",
       original:
-      "../img/meeting4.png",
+      "/img/meeting4.png",
       description: "Meeting",
     },
   ];
