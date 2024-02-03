@@ -4,9 +4,9 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 const images = [
     {
       preview:
-      "/public/teamWork.png",
+      "../img/teamWork.png",
       original:
-      "/public/teamWork.png",
+      "../img/teamWork4.png",
       description: "Team Work",
     },
     {
