@@ -77,7 +77,7 @@ const images = [
   </a></li>`;
   },"");
   gallery.innerHTML = imageGallery;
-  const lightbox = new SimpleLightbox('.gallery a', { /*  */ });
+  // const lightbox = new SimpleLightbox('.gallery a', { /*  */ });
 
 
   
