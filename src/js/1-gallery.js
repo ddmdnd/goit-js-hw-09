@@ -1,7 +1,9 @@
  import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
+
+
     
-const images = [
+export const images = [
     // {
     //   preview:
     //   "../img/teamWork.png",
@@ -138,7 +140,10 @@ const images = [
   </a></li>`;
   },"");
   gallery.innerHTML = imageGallery;
-  const lightbox = new SimpleLightbox('.gallery a', { /*  */ });
+  const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt', captionPosition: 'bottom', captionDelay: 250
+  });
+ 
 
 
   
