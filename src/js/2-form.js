@@ -1,4 +1,5 @@
 const form = document.querySelector(".feedback-form");
+const textarea = form.querySelector(".form-label-textarea")
 form.addEventListener("input", takeDataForm);
 
 function takeDataForm(event) {
@@ -24,8 +25,10 @@ function putDataForm() {
         }
     }
 }
-form.addEventListener("submit", function(event) {
-    event.preventDefault(); 
+form.addEventListener("submit", function () {
+    if(form !== null && textarea !== null ) {
     localStorage.removeItem("feedback-form-state");
+    preventDefault();
     form.reset();
+    }
 });
