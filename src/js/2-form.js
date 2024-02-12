@@ -25,10 +25,13 @@ function putDataForm() {
         }
     }
 }
-form.addEventListener("submit", function () {
-    if(form !== null && textarea !== null ) {
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Дані форми:", {
+        email: form.elements.email.value,
+        message: form.elements.message.value
+    });
     localStorage.removeItem("feedback-form-state");
-    preventDefault();
     form.reset();
-    }
 });
+
