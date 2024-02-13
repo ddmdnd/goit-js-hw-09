@@ -22,7 +22,7 @@ function putDataForm() {
     }
 }
 form.addEventListener("submit", function (event) {
-    if(form.elements.email.value && form.elements.message.value){
+    if(form.elements.email.value.trim() && form.elements.message.value.trim()){
     event.preventDefault();
     console.log("Дані форми:", {
         email: form.elements.email.value,
